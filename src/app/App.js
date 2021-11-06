@@ -1,10 +1,10 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route,
   NavLink,
-  useMatch,
+  useRouteMatch,
 } from "react-router-dom";
 import NewQuizForm from "../components/NewQuizForm";
 import NewTopicForm from "../components/NewTopicForm";
@@ -20,41 +20,41 @@ export default function App() {
       <nav>
         <ul>
           <li>
-            <NavLink to={ROUTES.topicsRoute()} activeClassName="active">
+            <NavLink strict to={ROUTES.topicsRoute()} activeClassName="active">
               Topics
             </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.quizzesRoute()} activeClassName="active">
+            <NavLink strict to={ROUTES.quizzesRoute()} activeClassName="active">
               Quizzes
             </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.newQuizRoute()} activeClassName="active">
+            <NavLink strict to={ROUTES.newQuizRoute()} activeClassName="active">
               New Quiz
             </NavLink>
           </li>
         </ul>
       </nav>
 
-      <Routes>
+      <Switch>
         <Route path="/topics">
           <TopicsRoutes />
         </Route>
         <Route path="/quizzes">
           <QuizRoutes />
         </Route>
-      </Routes>
+      </Switch>
     </Router>
   );
 }
 
 function TopicsRoutes() {
-  let match = useMatch();
+  let match = useRouteMatch();
 
   return (
     <>
-      <Routes>
+      <Switch>
         <Route path={`${match.path}/new`}>
           <NewTopicForm />
         </Route>
@@ -64,17 +64,17 @@ function TopicsRoutes() {
         <Route path={`${match.path}`}>
           <Topics />
         </Route>
-      </Routes>
+      </Switch>
     </>
   );
 }
 
 function QuizRoutes() {
-  let match = useMatch();
+  let match = useRouteMatch();
 
   return (
     <>
-      <Routes>
+      <Switch>
         <Route path={`${match.path}/new`}>
           <NewQuizForm />
         </Route>
@@ -84,7 +84,7 @@ function QuizRoutes() {
         <Route path={`${match.path}`}>
           <Quizzes />
         </Route>
-      </Routes>
+      </Switch>
     </>
   );
 }

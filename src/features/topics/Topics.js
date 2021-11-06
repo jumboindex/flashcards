@@ -6,7 +6,8 @@ import { selectTopic } from "./TopicSlice";
 import { useSelector } from "react-redux";
 
 export default function Topics() {
-  const topics = useSelector(selectTopic); // replace this with a call to your selector to select all the topics in state
+  const topics = useSelector(selectTopic);
+  console.log(topics)
 
   return (
     <section className="center">
@@ -22,7 +23,7 @@ export default function Topics() {
                <p>{topic.quizIds.length} Quizzes</p>
              </div>
            </div>
-         </Link>
+         </Link> 
           </li>
         ))}
       </ul>
