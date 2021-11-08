@@ -1,10 +1,19 @@
-# To Run
+# Flash Cards - quiz app
 
-Run `npm start` in the project root and the app will be available on port 3000.
+## Table of contents
 
-# State
+- [Flash Cards - quiz app](#flash-cards---quiz-app)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+- [Routes](#routes)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Status](#status)
+- [To Test](#to-test)
 
-The app's state is totally normalized, with slices for topics, quizzes, and cards.
+## General info
+
+This is simple flash card / quiz app I created to learn Redux as part of my Codecademy course. The apps state contains three slices: topics, quizzes and cards, with slices created using Redux Tool Kit.
 
 # Routes
 
@@ -15,8 +24,23 @@ The app's state is totally normalized, with slices for topics, quizzes, and card
 - `/quizzes` – index of all quizzes
 - `/quizzes/:quizId` – page for an individual quiz
 
+## Technologies
+
+- Javascript
+- React
+- react-router-dom
+- Redux
+
+## Setup
+
+`npm start`
+
+## Status
+
+Project is: Finished
+
 # To Test
 
 1. Create topics
 2. Create quizzes
-3. Visit the page for an individual quiz and flip the cards over
+3. Visit the page for an individual quiz and flip the cards over.

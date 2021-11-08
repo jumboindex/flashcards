@@ -25,7 +25,6 @@ export const dispatchNewQuizTopic = (payload) => {
     return (dispatch, getState) => {
         dispatch(addQuiz(payload));
         dispatch(addQuizId(quizIdPayload));
-        console.log(getState(selectQuizzes));
     }
 }
 
