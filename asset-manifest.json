@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/jumboindex/flashcards/static/js/main.29d41f7c.chunk.js",
+    "main.js.map": "/jumboindex/flashcards/static/js/main.29d41f7c.chunk.js.map",
+    "runtime-main.js": "/jumboindex/flashcards/static/js/runtime-main.9b09c263.js",
+    "runtime-main.js.map": "/jumboindex/flashcards/static/js/runtime-main.9b09c263.js.map",
+    "static/js/2.80bf8026.chunk.js": "/jumboindex/flashcards/static/js/2.80bf8026.chunk.js",
+    "static/js/2.80bf8026.chunk.js.map": "/jumboindex/flashcards/static/js/2.80bf8026.chunk.js.map",
+    "index.html": "/jumboindex/flashcards/index.html",
+    "precache-manifest.fc0a3405dbc1ab89c7480b94cfa359d1.js": "/jumboindex/flashcards/precache-manifest.fc0a3405dbc1ab89c7480b94cfa359d1.js",
+    "service-worker.js": "/jumboindex/flashcards/service-worker.js",
+    "static/js/2.80bf8026.chunk.js.LICENSE.txt": "/jumboindex/flashcards/static/js/2.80bf8026.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b09c263.js",
+    "static/js/2.80bf8026.chunk.js",
+    "static/js/main.29d41f7c.chunk.js"
+  ]
+}
