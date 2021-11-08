@@ -5,7 +5,7 @@
 - [Flash Cards - quiz app](#flash-cards---quiz-app)
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
-- [Routes](#routes)
+  - [Routes](#routes)
   - [Technologies](#technologies)
   - [Setup](#setup)
   - [Status](#status)
@@ -15,7 +15,7 @@
 
 This is simple flash card / quiz app I created to learn Redux as part of my Codecademy course. The apps state contains three slices: topics, quizzes and cards, with slices created using Redux Tool Kit.
 
-# Routes
+## Routes
 
 - `/new-topic` – form to create a new topic
 - `/topics` – index of all topics
